@@ -8,12 +8,4 @@ export default defineConfig({
     outDir: '../dist', // Output to root directory
     emptyOutDir: true,
   },
-  server: {
-    middlewareMode: false,
-    headers: {
-      '/.well-known/apple-app-site-association': {
-        'Content-Type': 'application/json',
-      },
-    },
-  },
 })
