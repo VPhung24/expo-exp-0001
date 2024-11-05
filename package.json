@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "pnpm --filter web dev",
     "build": "./build.sh",
-    "start": "pnpm --filter web start"
+    "start": "pnpm --filter web start",
+    "rn-start": "pnpm --filter passkey-react-native start"
   },
   "keywords": [],
   "author": "",
