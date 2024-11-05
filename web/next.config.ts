@@ -3,14 +3,14 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
-  headers: async () => {
+  async rewrites() {
     return [
-        {
-          source: "/.well-known/apple-app-site-association",
-          headers: [{ key: "content-type", value: "application/json" }]
-        }
-    ]
-  }
+      {
+        source: "/.well-known/apple-app-site-association",
+        destination: "/api/apple-app-site-association",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
