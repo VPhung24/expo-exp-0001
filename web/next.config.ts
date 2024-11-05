@@ -7,7 +7,11 @@ const nextConfig: NextConfig = {
     return [
       {
         source: "/.well-known/apple-app-site-association",
-        destination: "/api/apple-app-site-association",
+        destination: "/api/.well-known/apple-app-site-association",
+      },
+      {
+        source: '/.well-known/assetlinks.json',
+        destination: '/api/.well-known/assetlinks',
       },
     ];
   },
