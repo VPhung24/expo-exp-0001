@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm --filter web dev",
-    "build": "rm -rf dist && pnpm --filter web build"
+    "build": "./build.sh",
+    "start": "pnpm --filter web start"
   },
   "keywords": [],
   "author": "",
